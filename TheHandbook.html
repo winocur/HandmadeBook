@@ -1,250 +1,262 @@
-<style>
-body {
-	padding: 0px;
-	margin: 20px;
-	background-color: #1e1e1e;
-	color: #ead1dc;
-  font-family: "Lucida Console", Courier, monospace;
-}
-.container {
-	margin: auto;
-	width: 720px;
-}
-.centered {
-  width: 100%;
-	text-align: center;
-}
-h1, h2, h3, p {
-	font-weight: normal;
-  display: inline;
-}
-h1 {
-	font-size: 36px;
-}
-h2 {
-	font-size: 24px;
-}
-h3 {
-	font-size: 20px;
-  line-height: 50px;
-  padding-bottom: 12px;
-}
-li {
-	font-weight: bold;
-  line-height: 22px;
-  padding-bottom: 12px;
-}
-</style>
+<!doctype html>
 
-<div class="container">
-  <div class="centered"><h1>Handmade Book</h1></div> <br/> <br/>
-  <div class="centered"><p>Principios y prácticas alternativas para programadores</p></div> <br/>
-  <p>V 1.0</p> <br/> <br/>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Handmade Book</title>
 
-  <h2>Principios</h2>
-
-  <ol>
-    <li>
-      <h3>Basados en la realidad</h3>
-      <ol type="a">
-        <li><p>El código son instrucciones reales que corren en hardware real. Las abstracciones solo ofuscan la realidad e imponen estructuras altamente idiosincráticas. <b>Nunca queremos dejar de pensar en la realidad.</b></p></li>
-        <li><p>La eficiencia de una solución debe medirse con <b>métricas reales:</b> performance, tiempos de build, uso de memoria, y estabilidad de la aplicación.</p></li>
-        <li><p>El objetivo de un programa es <b>transformar datos de manera significativa.</b></p></li>
-      </ol>
-    </li>
-
-    <br>
-
-    <li>
-      <h3>Tan simple como el problema permita</h3>
-      <ol type="a">
-        <li><p>La solución a un problema jamás debería ser más compleja que la complejidad inherente al problema, porque si es así, estamos <b>creando complejidad innecesaria.</b></p></li>
-        <li><p><b>Imponer un modelo mental</b> al problema es una operación autoritaria que a menudo complica la solución innecesariamente.
-		</p></li>
-		<li><p>La forma (arquitectura) de una solución debería amoldarse a la forma del problema. El modelado basado en objetos del mundo es inadecuado, porque fuerza una forma distinta a la realidad técnica del problema.
-		</p></li>
-      </ol>
-    </li>
-
-	<br>
-
-    <li>
-      <h3>El código es solo una herramienta</h3>
-      <ol type="a">
-        <li><p>Codificar no es el trabajo del programador, sino transformar datos de un modo <b>que sea significativo</b>. Producir código burocrático (<i>boilerplate</i>) es equivalente a no hacer nada.</p></li>
-        <li><p><b>En el fondo, el código no importa.</b></p></li>
-		<li><p>Discusiones sobre estilo, arquitectura, lenguajes de programación, tienen importancia secundaria; y deberíamos pensar en estos elementos en la medida que nos ayudan (o nos obstruyen) para resolver problemas.
-		</p></li>
-      </ol>
-    </li>
-	
-	<br>
-
-    <li>
-      <h3>La plataforma es el objetivo</h3>
-      <ol type="a">
-        <li><p>El código no es la plataforma. El Hardware es la plataforma, y el producto no es el código sino la transformación significativa de datos. Conocer el <b>rango de hardware</b> en el que corre nuestra aplicación nos permite tomar decisiones informadas.
-		</p></li>
-        <li><p>Al correr sobre runtimes multiplataforma olvidamos que nuestro objetivo de despliegue es el <b>hardware concreto</b>, que corre instrucciones y modifica la data entrante (<i>input</i>) para generar datos de salida (<i>output</i>).</p></li>
-		<li><p>No existe lo verdaderamente multiplataforma, existen generalidades que podemos explotar.</p></li>
-      </ol>
-    </li>
-	
-	<br>
-
-    <li>
-      <h3>Al principio, queremos resultados</h3>
-      <ol type="a">
-        <li><p>Comenzar por <b>codificar lo más simple</b> que da el resultado deseado.</p></li>
-        <li><p>Para explorar el problema, queremos <b>iterar rápidamente</b>. Para eso debemos mantener el código flexible, el desarrollo ágil, y un enfoque en resultados.</p></li>
-        <li><p>Los resultados de una iteración nos permiten analizar la efectividad de la solución, y tomar decisiones más informadas al momento de encarar una reescritura.</p></li>
-        <li><p>Para obtener resultados rápidos utilizamos tecnologías, librerías, patrones y soluciones subóptimas <b>sin preocuparnos inicialmente</b> por estos aspectos.</p></li>
-      </ol>
-    </li>
+    <style>
+    body {
+      padding: 0px;
+      margin: 20px;
+      background-color: #1e1e1e;
+      color: #ead1dc;
+      font-family: "Lucida Console", Courier, monospace;
+    }
+    .container {
+      margin: auto;
+      width: 720px;
+    }
+    .centered {
+      width: 100%;
+      text-align: center;
+    }
+    h1, h2, h3, p {
+      font-weight: normal;
+      display: inline;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 50px;
+      padding-bottom: 12px;
+    }
+    li {
+      font-weight: bold;
+      line-height: 22px;
+      padding-bottom: 12px;
+    }
+    </style>
+  </head>
   
-  <br>
+  <body>
+    <div class="container">
+      <div class="centered"><h1>Handmade Book</h1></div> <br/> <br/>
+      <div class="centered"><p>Principios y prácticas alternativas para programadores</p></div> <br/>
+      <p>V 1.0</p> <br/> <br/>
     
-    <li>
-      <h3>Al final, queremos control</h3>
-      <ol type="a">
-        <li><p>Mantener <b>autoría sobre el stack de tecnologías</b> nos da control.</p></li>
-        <li><p>Un mayor control del código que corre permite optimizar al final de un proyecto, y lograr un producto de mayor calidad. Sacrificar control para obtener funcionalidad (incluir una librería) <b>debe ser una decisión tomada a conciencia.</b></p></li>
-        <li><p>Es incorrecto asumir que el código de otros (librerías) es necesariamente mejor. A veces <b>las soluciones demasiado generalizadas no se ajustan a nuestra necesidad.</b></p></li>
-        <li><p>El uso de librerías externas nos ata al ciclo de vida de esa librería. Si una dependencia queda abandonada, corremos el riesgo de que nuestro programa ya no corra en el futuro.</p></li>
-      </ol>
-    </li>
-
-  <br>
+      <h2>Principios</h2>
     
-    <li>
-      <h3>La felicidad de la programación (<i>Joy of Programming</i>)</h3>
-      <ol type="a">
-        <li><p>Programar <i>debería</i> <b>hacernos felices</b>. Hay algo inherente en el acto de programar que es satisfactorio, porque es trabajo creativo, significativo y desafiante.</p></li>
-        <li><p>Si programar no nos hace felices, es probable que estemos luchando contra algo, sea librerías externas muy generalizadas o idiosincráticas; diseños abstractos <i>a priori</i>, o dogmas (<i>cargo cult programming</i>) que no nos aportan nada.</p></li>
-        <li><p>Si bien nunca deben ser una prioridad, la legibilidad, prolijidad y estética del código pueden mejorar nuestro ánimo y capacidad de comunicación al momento de resolver problemas.</b></p></li>
-      </ol>
-    </li>
-  </ol>
-
-  <br>
-  <br>
-
-  <h2>Prácticas</h2>
-
-  <ol start="8">
-    <li>
-      <h3>Saber es poder</h3>
-      <ol type="a">
-        <li><p><b>No nos basamos en supuestos y conjeturas</b>. Buscamos medir performance, uso de memoria, lectura de disco, para entender en verdad lo que ocurre cuando corremos el programa.</p></li>
-        <li><p>Preferimos librerías de código abierto (<i>open source</i>) que nos permitan solucionar problemas que surjan y entender el código que corre nuestro programa. Preferimos incluir los fuentes en nuestro proyecto en lugar de depender de repositorios remotos y <i>package managers</i>, para tener control nuestras dependencias</p></li>
-        <li><p>En general, <b>eliminar incógnitas</b> nos permite resolver problemas con más efectividad. No queremos que el lenguaje o el runtime haga magia por nosotros. <b>La magia es código que no vemos</b>, y sobre el que no tenemos control.</p></li>
-      </ol>
-    </li>
-
-    <br>
-
-    <li>
-      <h3>Diseño de software desde abajo (<i>bottom up</i>)</h3>
-      <ol type="a">
-        <li><p>Favorecemos un <b>diseño exploratorio</b>. A partir de la reescritura de código (refactor) vamos descubriendo las aristas de nuestro problema. <b>Escribir código es explorar el problema.</b></p></li>
-        <li><p>No pretendemos saber de antemano qué estructura tendrá el código. La realidad siempre termina llevándonos en otra dirección, y atarnos a un diseño previo nos hace persistir en una idea errónea. La arquitectura emerge de la exploración, y se amolda a la forma del problema.</p></li>
-		    <li><p>Favorecemos la <b>iteración rápida</b> que nos permita explorar el problema de manera orgánica sin perder tiempo en forzar una arquitectura de alto nivel. Construimos el programa de manera iterativa, escribiendo y reescribiendo.</p></li>
-      </ol>
-    </li>
-
-	<br>
-
-    <li>
-      <h3>Código simple y efectivo</h3>
-      <ol type="a">
-        <li><p>No generalizamos de antemano, <b>no resolvemos problemas que todavía no tenemos</b> (<i>future proofing</i>), ni hacemos código infinitamente reusable. Un problema concreto requiere una solución concreta.</p></li>
-        <li><p>Favorecemos el manejo manual de memoria y de errores, para no depender de implementaciones complejas e invisibles que encontramos en los <i>runtimes</i> de tecnología.</p></li>
-		    <li><p>Favorecemos <b>funciones largas, archivos grandes, y código procedural lineal</b>. Agregar indirección y abstracción, es agregar dependencias de código, y complejizar el stack de llamadas, lo que genera código burocrático y enmarañado.</p></li>
-      </ol>
-    </li>
-	
-	<br>
-
-    <li>
-      <h3>Orientado a datos (<i>Data Oriented Design</i>)</h3>
-      <ol type="a">
-        <li><p><b>Los datos que describen el programa son más importantes que el código.</b> Entender el problema es entender los datos que transformamos.</p></li>
-        <li><p>Los datos no son únicamente la estructura sino también el flujo, frecuencia y tamaño de lo que se transforma.<p></li>
-		    <li><p>Optimizar para el <b>caso más común</b>. Esto requiere entender cuál será el uso concreto del software en el mundo real, cuáles son las operaciones más frecuentes y cuáles las menos. Es decir, entender el caudal promedio de datos (<i>throughput</i>).</p></li>
-      </ol>
-    </li>
-	
-	<br>
-
-    <li>
-      <h3>Compresión Semántica (<i>Semantic Compression</i>)</h3>
-      <ol type="a">
-        <li><p>Técnica de programación relacionada con el diseño exploratorio donde, en un paso de reescritura (<i>refactor</i>) se busca “comprimir” el código identificando piezas repetidas o generalizables, para extraerlas en funciones comunes. </p></li>
-        <li><p>Implica <b>nunca crear código “reusable” antes de identificar el caso de reutilización</b>. Si el código no se usa <b>al menos dos veces</b>, no lo generalizamos.</p></li>
-        <li><p>Código “compacto” es el que tiene la menor cantidad de código para la mayor cantidad de transformaciones significativas de datos.</p></li>
-      </ol>
-    </li>
-  
-  <br>
+      <ol>
+        <li>
+          <h3>Basados en la realidad</h3>
+          <ol type="a">
+            <li><p>El código son instrucciones reales que corren en hardware real. Las abstracciones solo ofuscan la realidad e imponen estructuras altamente idiosincráticas. <b>Nunca queremos dejar de pensar en la realidad.</b></p></li>
+            <li><p>La eficiencia de una solución debe medirse con <b>métricas reales:</b> performance, tiempos de build, uso de memoria, y estabilidad de la aplicación.</p></li>
+            <li><p>El objetivo de un programa es <b>transformar datos de manera significativa.</b></p></li>
+          </ol>
+        </li>
     
-    <li>
-      <h3>Terminología concreta y consistente</h3>
-      <ol type="a">
-        <li><p>El lenguaje es una abstracción a la que no queremos ni podemos escapar. <b>Nombrar una variable es imponer un modelo mental</b>. Por eso el nombre de las estructuras de datos, variables y funciones es uno de los elementos más importantes de la codificación.</p></li>
-        <li><p>Utilizamos conceptos consistentemente. Es importante <b>que las palabras signifiquen lo mismo</b> en distintas partes del código, en la documentación y la comunicación diaria.</p></li>
-        <li><p>Usamos nombres expresivos, concretos y consistentes para comunicarnos con claridad y eficiencia.</p></li>
-      </ol>
-    </li>
-
-  <br>
+        <br>
     
-    <li>
-      <h3>Herramientas Offline</h3>
-      <ol type="a">
-        <li><p>Usamos y creamos herramientas que nos ayudan a programar mejor, pero que no impactan la performance final del software (<i>offline tools</i>).</p></li>
-        <li><p>Buscamos <b>automatizar tareas repetitivas</b>, especialmente si son muy frecuentes en el flujo de trabajo, y si nos permiten identificar errores.</p></li>
-        <li><p>Usamos herramientas de <b>análisis estático</b> (<i>static análisis</i>) para razonar acerca de lo que nuestro programa está haciendo. Por eso favorecemos lenguajes, compiladores y herramientas que nos den información útil acerca de nuestro programa.</p></li>
+        <li>
+          <h3>Tan simple como el problema permita</h3>
+          <ol type="a">
+            <li><p>La solución a un problema jamás debería ser más compleja que la complejidad inherente al problema, porque si es así, estamos <b>creando complejidad innecesaria.</b></p></li>
+            <li><p><b>Imponer un modelo mental</b> al problema es una operación autoritaria que a menudo complica la solución innecesariamente.
+        </p></li>
+        <li><p>La forma (arquitectura) de una solución debería amoldarse a la forma del problema. El modelado basado en objetos del mundo es inadecuado, porque fuerza una forma distinta a la realidad técnica del problema.
+        </p></li>
+          </ol>
+        </li>
+    
+      <br>
+    
+        <li>
+          <h3>El código es solo una herramienta</h3>
+          <ol type="a">
+            <li><p>Codificar no es el trabajo del programador, sino transformar datos de un modo <b>que sea significativo</b>. Producir código burocrático (<i>boilerplate</i>) es equivalente a no hacer nada.</p></li>
+            <li><p><b>En el fondo, el código no importa.</b></p></li>
+        <li><p>Discusiones sobre estilo, arquitectura, lenguajes de programación, tienen importancia secundaria; y deberíamos pensar en estos elementos en la medida que nos ayudan (o nos obstruyen) para resolver problemas.
+        </p></li>
+          </ol>
+        </li>
+      
+      <br>
+    
+        <li>
+          <h3>La plataforma es el objetivo</h3>
+          <ol type="a">
+            <li><p>El código no es la plataforma. El Hardware es la plataforma, y el producto no es el código sino la transformación significativa de datos. Conocer el <b>rango de hardware</b> en el que corre nuestra aplicación nos permite tomar decisiones informadas.
+        </p></li>
+            <li><p>Al correr sobre runtimes multiplataforma olvidamos que nuestro objetivo de despliegue es el <b>hardware concreto</b>, que corre instrucciones y modifica la data entrante (<i>input</i>) para generar datos de salida (<i>output</i>).</p></li>
+        <li><p>No existe lo verdaderamente multiplataforma, existen generalidades que podemos explotar.</p></li>
+          </ol>
+        </li>
+      
+      <br>
+    
+        <li>
+          <h3>Al principio, queremos resultados</h3>
+          <ol type="a">
+            <li><p>Comenzar por <b>codificar lo más simple</b> que da el resultado deseado.</p></li>
+            <li><p>Para explorar el problema, queremos <b>iterar rápidamente</b>. Para eso debemos mantener el código flexible, el desarrollo ágil, y un enfoque en resultados.</p></li>
+            <li><p>Los resultados de una iteración nos permiten analizar la efectividad de la solución, y tomar decisiones más informadas al momento de encarar una reescritura.</p></li>
+            <li><p>Para obtener resultados rápidos utilizamos tecnologías, librerías, patrones y soluciones subóptimas <b>sin preocuparnos inicialmente</b> por estos aspectos.</p></li>
+          </ol>
+        </li>
+      
+      <br>
+        
+        <li>
+          <h3>Al final, queremos control</h3>
+          <ol type="a">
+            <li><p>Mantener <b>autoría sobre el stack de tecnologías</b> nos da control.</p></li>
+            <li><p>Un mayor control del código que corre permite optimizar al final de un proyecto, y lograr un producto de mayor calidad. Sacrificar control para obtener funcionalidad (incluir una librería) <b>debe ser una decisión tomada a conciencia.</b></p></li>
+            <li><p>Es incorrecto asumir que el código de otros (librerías) es necesariamente mejor. A veces <b>las soluciones demasiado generalizadas no se ajustan a nuestra necesidad.</b></p></li>
+            <li><p>El uso de librerías externas nos ata al ciclo de vida de esa librería. Si una dependencia queda abandonada, corremos el riesgo de que nuestro programa ya no corra en el futuro.</p></li>
+          </ol>
+        </li>
+    
+      <br>
+        
+        <li>
+          <h3>La felicidad de la programación (<i>Joy of Programming</i>)</h3>
+          <ol type="a">
+            <li><p>Programar <i>debería</i> <b>hacernos felices</b>. Hay algo inherente en el acto de programar que es satisfactorio, porque es trabajo creativo, significativo y desafiante.</p></li>
+            <li><p>Si programar no nos hace felices, es probable que estemos luchando contra algo, sea librerías externas muy generalizadas o idiosincráticas; diseños abstractos <i>a priori</i>, o dogmas (<i>cargo cult programming</i>) que no nos aportan nada.</p></li>
+            <li><p>Si bien nunca deben ser una prioridad, la legibilidad, prolijidad y estética del código pueden mejorar nuestro ánimo y capacidad de comunicación al momento de resolver problemas.</b></p></li>
+          </ol>
+        </li>
       </ol>
-    </li>
-  </ol>
-  
-  <br>
-  <br>
-
-  <h2>Fuentes</h2>
-  <br>
-  <br>
-  <br>
-  Richard Fabian: Data Oriented Design Book<br>
-  https://www.dataorienteddesign.com/dodbook/
-  <br>
-  <br>
-  Handmade Network Manifesto<br>
-  https://handmade.network/manifesto
-  <br>
-  <br>
-  Casey Muratori: Semantic Compression<br>
-  https://caseymuratori.com/blog_0015
-  <br>
-  <br>
-  Mike Acton: Data Oriented Desing in C++ <br>
-  https://www.youtube.com/watch?v=rX0ItVEVjHc
-  <br>
-  <br>
-  Mike Acton: Building a Data Oriented Future<br>
-  https://www.youtube.com/watch?v=u8B3j8rqYMw
-  <br>
-  <br>
-  Abner Coimber: What Programming is Never About<br>
-  https://www.youtube.com/watch?v=Lzc3HcIgXis&t=1258s
-  <br>
-  <br>
-  Jon Blow: Data Oriented Demo<br>
-  https://www.youtube.com/watch?v=ZHqFrNyLlpA&t=2s
-  <br>
-  <br>
-  HandmadeCon: Jonathan Blow<br>
-  https://www.youtube.com/watch?v=Jpkrx1osuLc&t=1440s
-  <br>
-  <br>
-</div>
+    
+      <br>
+      <br>
+    
+      <h2>Prácticas</h2>
+    
+      <ol start="8">
+        <li>
+          <h3>Saber es poder</h3>
+          <ol type="a">
+            <li><p><b>No nos basamos en supuestos y conjeturas</b>. Buscamos medir performance, uso de memoria, lectura de disco, para entender en verdad lo que ocurre cuando corremos el programa.</p></li>
+            <li><p>Preferimos librerías de código abierto (<i>open source</i>) que nos permitan solucionar problemas que surjan y entender el código que corre nuestro programa. Preferimos incluir los fuentes en nuestro proyecto en lugar de depender de repositorios remotos y <i>package managers</i>, para tener control nuestras dependencias</p></li>
+            <li><p>En general, <b>eliminar incógnitas</b> nos permite resolver problemas con más efectividad. No queremos que el lenguaje o el runtime haga magia por nosotros. <b>La magia es código que no vemos</b>, y sobre el que no tenemos control.</p></li>
+          </ol>
+        </li>
+    
+        <br>
+    
+        <li>
+          <h3>Diseño de software desde abajo (<i>bottom up</i>)</h3>
+          <ol type="a">
+            <li><p>Favorecemos un <b>diseño exploratorio</b>. A partir de la reescritura de código (refactor) vamos descubriendo las aristas de nuestro problema. <b>Escribir código es explorar el problema.</b></p></li>
+            <li><p>No pretendemos saber de antemano qué estructura tendrá el código. La realidad siempre termina llevándonos en otra dirección, y atarnos a un diseño previo nos hace persistir en una idea errónea. La arquitectura emerge de la exploración, y se amolda a la forma del problema.</p></li>
+            <li><p>Favorecemos la <b>iteración rápida</b> que nos permita explorar el problema de manera orgánica sin perder tiempo en forzar una arquitectura de alto nivel. Construimos el programa de manera iterativa, escribiendo y reescribiendo.</p></li>
+          </ol>
+        </li>
+    
+      <br>
+    
+        <li>
+          <h3>Código simple y efectivo</h3>
+          <ol type="a">
+            <li><p>No generalizamos de antemano, <b>no resolvemos problemas que todavía no tenemos</b> (<i>future proofing</i>), ni hacemos código infinitamente reusable. Un problema concreto requiere una solución concreta.</p></li>
+            <li><p>Favorecemos el manejo manual de memoria y de errores, para no depender de implementaciones complejas e invisibles que encontramos en los <i>runtimes</i> de tecnología.</p></li>
+            <li><p>Favorecemos <b>funciones largas, archivos grandes, y código procedural lineal</b>. Agregar indirección y abstracción, es agregar dependencias de código, y complejizar el stack de llamadas, lo que genera código burocrático y enmarañado.</p></li>
+          </ol>
+        </li>
+      
+      <br>
+    
+        <li>
+          <h3>Orientado a datos (<i>Data Oriented Design</i>)</h3>
+          <ol type="a">
+            <li><p><b>Los datos que describen el programa son más importantes que el código.</b> Entender el problema es entender los datos que transformamos.</p></li>
+            <li><p>Los datos no son únicamente la estructura sino también el flujo, frecuencia y tamaño de lo que se transforma.<p></li>
+            <li><p>Optimizar para el <b>caso más común</b>. Esto requiere entender cuál será el uso concreto del software en el mundo real, cuáles son las operaciones más frecuentes y cuáles las menos. Es decir, entender el caudal promedio de datos (<i>throughput</i>).</p></li>
+          </ol>
+        </li>
+      
+      <br>
+    
+        <li>
+          <h3>Compresión Semántica (<i>Semantic Compression</i>)</h3>
+          <ol type="a">
+            <li><p>Técnica de programación relacionada con el diseño exploratorio donde, en un paso de reescritura (<i>refactor</i>) se busca “comprimir” el código identificando piezas repetidas o generalizables, para extraerlas en funciones comunes. </p></li>
+            <li><p>Implica <b>nunca crear código “reusable” antes de identificar el caso de reutilización</b>. Si el código no se usa <b>al menos dos veces</b>, no lo generalizamos.</p></li>
+            <li><p>Código “compacto” es el que tiene la menor cantidad de código para la mayor cantidad de transformaciones significativas de datos.</p></li>
+          </ol>
+        </li>
+      
+      <br>
+        
+        <li>
+          <h3>Terminología concreta y consistente</h3>
+          <ol type="a">
+            <li><p>El lenguaje es una abstracción a la que no queremos ni podemos escapar. <b>Nombrar una variable es imponer un modelo mental</b>. Por eso el nombre de las estructuras de datos, variables y funciones es uno de los elementos más importantes de la codificación.</p></li>
+            <li><p>Utilizamos conceptos consistentemente. Es importante <b>que las palabras signifiquen lo mismo</b> en distintas partes del código, en la documentación y la comunicación diaria.</p></li>
+            <li><p>Usamos nombres expresivos, concretos y consistentes para comunicarnos con claridad y eficiencia.</p></li>
+          </ol>
+        </li>
+    
+      <br>
+        
+        <li>
+          <h3>Herramientas Offline</h3>
+          <ol type="a">
+            <li><p>Usamos y creamos herramientas que nos ayudan a programar mejor, pero que no impactan la performance final del software (<i>offline tools</i>).</p></li>
+            <li><p>Buscamos <b>automatizar tareas repetitivas</b>, especialmente si son muy frecuentes en el flujo de trabajo, y si nos permiten identificar errores.</p></li>
+            <li><p>Usamos herramientas de <b>análisis estático</b> (<i>static análisis</i>) para razonar acerca de lo que nuestro programa está haciendo. Por eso favorecemos lenguajes, compiladores y herramientas que nos den información útil acerca de nuestro programa.</p></li>
+          </ol>
+        </li>
+      </ol>
+      
+      <br>
+      <br>
+    
+      <h2>Fuentes</h2>
+      <br>
+      <br>
+      <br>
+      Richard Fabian: Data Oriented Design Book<br>
+      https://www.dataorienteddesign.com/dodbook/
+      <br>
+      <br>
+      Handmade Network Manifesto<br>
+      https://handmade.network/manifesto
+      <br>
+      <br>
+      Casey Muratori: Semantic Compression<br>
+      https://caseymuratori.com/blog_0015
+      <br>
+      <br>
+      Mike Acton: Data Oriented Desing in C++ <br>
+      https://www.youtube.com/watch?v=rX0ItVEVjHc
+      <br>
+      <br>
+      Mike Acton: Building a Data Oriented Future<br>
+      https://www.youtube.com/watch?v=u8B3j8rqYMw
+      <br>
+      <br>
+      Abner Coimber: What Programming is Never About<br>
+      https://www.youtube.com/watch?v=Lzc3HcIgXis&t=1258s
+      <br>
+      <br>
+      Jon Blow: Data Oriented Demo<br>
+      https://www.youtube.com/watch?v=ZHqFrNyLlpA&t=2s
+      <br>
+      <br>
+      HandmadeCon: Jonathan Blow<br>
+      https://www.youtube.com/watch?v=Jpkrx1osuLc&t=1440s
+      <br>
+      <br>
+    </div>
+  </body>
+</html>
